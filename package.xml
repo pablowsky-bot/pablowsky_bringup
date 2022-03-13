@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pablowsky_bringup</name>
+  <version>0.0.0</version>
+  <description>The pablowsky_bringup package</description>
+
+  <maintainer email="olima_84@yahoo.com">Oscar Lima</maintainer>
+
+  <license>BSD</license>
+
+  <!--   <build_depend>roscpp</build_depend> -->
+  <exec_depend>osoyoo_diff_drive</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
