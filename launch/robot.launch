@@ -5,9 +5,11 @@
   <include file="$(find osoyoo_diff_drive)/launch/base_driver.launch"/>
 
   <!-- teleoperation with space mouse -->
-  <include file="$(find pablowsky_teleop)/launch/space_mouse_teleop.launch"/>
+  <!--include file="$(find pablowsky_teleop)/launch/space_mouse_teleop.launch"/-->
 
   <!-- teleoperation with gamepad -->
-  <!--<include file="$(find pablowsky_teleop)/launch/teleop_joypad.launch"/>-->
+  <include file="$(find pablowsky_teleop)/launch/teleop_joypad.launch"/>
+
+  <include file="$(find pablowsky_bringup)/launch/includes/xtion_pro.launch"/>
 
 </launch>
