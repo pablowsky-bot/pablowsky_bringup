@@ -14,10 +14,6 @@
   <include file="$(find pablowsky_bringup)/launch/includes/xtion_pro.launch"/>
 
   <!-- web server video transmission -->
-  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
-  <node name="web_video_server" pkg="web_video_server" type="web_video_server">
-    <param name="port" value="8090"></param>
-    <param name="address" value="192.168.178.83"></param>
-  </node>
+
 
 </launch>
