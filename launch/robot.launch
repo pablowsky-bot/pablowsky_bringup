@@ -1,6 +1,13 @@
 <?xml version="1.0" ?>
 <launch>
 
+  <!-- upload robot URDF model to parameter server -->
+  <param name="robot_description"
+	 command="$(find xacro)/xacro '$(find pablowsky_description)/urdf/pablowsky_simplified.urdf.xacro'" />
+
+  <!-- generate tf data from urdf model and joint states -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+
   <!-- base driver (arduino) kinematics, cmd_vel, odom -->
   <include file="$(find osoyoo_diff_drive)/launch/base_driver.launch"/>
 
